@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ReleaseNotes>
+	<outputFile>Release.rtf</outputFile>
+	<jiraUri>https://solveitsoftware.atlassian.net/</jiraUri>
+	<userName>reportuser</userName>
+	<password>123321</password>
+	<sections>
+		<section>
+			<name>Fixed defects</name>
+			<jql>project = MPRT and issuetype = Bug and resolutiondate > 2013-07-09</jql>
+		</section>
+		<section>
+			<name>New functionality</name>
+			<jql>project = MPRT and issuetype in (Story, Improvement, "Technical Story")  and resolutiondate > 2013-07-09</jql>
+		</section>
+		<section>
+			<name>Known Issues</name>
+			<jql>project = MPRT and issuetype = Bug and status not in(Closed, Resolved, "Ready for UAT")</jql>
+		</section>  
+	</sections>
+</ReleaseNotes>
